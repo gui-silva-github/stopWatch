@@ -4,6 +4,7 @@ let display = document.querySelector('#display');
 
 let timer = null;
 
+
 function watchStop(){
     seconds++;
     if (seconds==60){
@@ -36,4 +37,4 @@ function resetWatch(){
     clearInterval(timer);
     [seconds, minutes, hours] = [0,0,0];
     display.innerHTML = "00:00:00";
-}
+};
